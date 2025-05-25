@@ -7,8 +7,24 @@ import { config } from "../../constants/config";
 const Hero = () => {
   return (
     <section className={`relative mx-auto h-screen w-full`}>
+      {/* 3D Computer Canvas as background */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 0,
+          width: "100%",
+          height: "100%",
+          pointerEvents: "none", // Prevents blocking text interactions
+        }}
+      >
+        <ComputersCanvas />
+      </div>
+
+      {/* Heading and content stays above */}
       <div
         className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
+        style={{ zIndex: 1, position: "relative" }}
       >
         <div className="mt-5 flex flex-col items-center justify-center">
           <div className="h-5 w-5 rounded-full bg-[#915EFF]" />
@@ -17,7 +33,8 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">{config.hero.name}</span>
+            Hi, I'm{" "}
+            <span className="text-[#915EFF]">{config.hero.name}</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
             {config.hero.p[0]} <br className="hidden sm:block" />
@@ -25,8 +42,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
-      <ComputersCanvas />
 
       <div className="xs:bottom-10 absolute bottom-32 flex w-full items-center justify-center">
         <a href="#about">

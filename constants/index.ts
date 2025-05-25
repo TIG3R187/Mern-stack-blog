@@ -31,6 +31,7 @@ import magazinecover from "../assets/Magazine Cover 2.jpg";
 import Nightwave from "../assets/Nightwave space2.jpg";
 import github from "../assets/github.png";
 import isaacImg from "../assets/tech/isaac.jpg";
+import webDeveloperImg from "../assets/Web Developer.png";
 
 export const navLinks: TNavLink[] = [
   {
@@ -50,7 +51,7 @@ export const navLinks: TNavLink[] = [
 const services: TService[] = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: webDeveloperImg,
   },
   {
     title: "React Native Developer",
@@ -133,7 +134,7 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: "Educational Technologists",
+    title: "Educational Technologist",
     companyName: "University of Ilorin",
     icon: unilorin,
     iconBg: "#E6DEDD",
