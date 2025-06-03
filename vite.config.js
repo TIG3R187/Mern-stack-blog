@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Mern-stack-blog/",
+  base: "/Mern-stack-blog/", // Set for GitHub Pages deployment
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1200, // Increase warning limit
