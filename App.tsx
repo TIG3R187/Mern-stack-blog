@@ -25,7 +25,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Mern-stack-blog">
       <div className="bg-primary relative z-0 min-h-screen flex flex-col">
         <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
           <Navbar />
