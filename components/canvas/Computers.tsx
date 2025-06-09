@@ -6,7 +6,7 @@ import * as THREE from "three";
 import CanvasLoader from "../layout/Loader";
 
 const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF(import.meta.env.BASE_URL + "desktop_pc/scene.gltf");
 
   return (
     <mesh>
