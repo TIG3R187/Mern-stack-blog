@@ -10,15 +10,17 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('three')) return 'three';
-            if (id.includes('react')) return 'react-vendor';
-            if (id.includes('framer-motion')) return 'framer-motion';
-            if (id.includes('maath')) return 'maath';
-            if (id.includes('@react-three')) return 'react-three';
-            return 'vendor';
-          }
-        },
+  if (id.includes('node_modules')) {
+    if (id.includes('three')) return 'three';
+    if (id.includes('@react-three')) return 'react-three';
+    if (id.includes('framer-motion')) return 'framer-motion';
+    if (id.includes('maath')) return 'maath';
+    if (id.match(/[\\/]node_modules[\\/]react([\\/]|$)/)) return 'react';
+    if (id.match(/[\\/]node_modules[\\/]react-dom([\\/]|$)/)) return 'react-dom';
+    return 'vendor';
+  }
+},
+
       },
     },
   },
