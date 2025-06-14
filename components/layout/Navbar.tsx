@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
-import { logo, menu, close } from "../../assets";
+import logo from "../../assets/MECHA-ISAAC.jpg";
+import menu from "../../assets/menu.svg";
+import close from "../../assets/close.svg";
 import { config } from "../../constants/config";
 
 const Navbar = () => {

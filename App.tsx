@@ -24,10 +24,8 @@ const App = () => {
     }
   }, []);
 
-  const basename = import.meta.env.DEV ? "/" : "/Mern-stack-blog";
-
   return (
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <div className="bg-primary relative z-0 min-h-screen flex flex-col">
         <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
           <Navbar />
@@ -82,3 +80,20 @@ const App = () => {
 
 export default App;
 
+// Add this to your globals.css or in a <style> tag in App.tsx:
+//
+// @keyframes rocket-bounce {
+//   0%, 100% { transform: translateY(0); }
+//   50% { transform: translateY(-24px) scale(1.1); }
+// }
+// .animate-rocket-bounce {
+//   animation: rocket-bounce 1.2s infinite;
+// }
+//
+// @keyframes pulsate {
+//   0%, 100% { transform: scale(1); }
+//   50% { transform: scale(1.1); }
+// }
+// .pulsate-astronaut {
+//   animation: pulsate 1.5s infinite;
+// }

@@ -7,7 +7,7 @@ import type {
 } from "../types";
 
 import {
-   web,
+  web,
   html,
   css,
   javascript,
@@ -23,8 +23,7 @@ import {
   waltersGarment,
   nodejs,
   git,
-  figma,
-  Codecademy
+  figma
 } from "../assets";
 import TigerClaw from "../assets/TigerClaw.png";
 import magazinecover from "../assets/Magazine Cover 2.jpg";
@@ -32,6 +31,7 @@ import Nightwave from "../assets/Nightwave space2.jpg";
 import github from "../assets/github.png";
 import isaacImg from "../assets/tech/isaac.jpg";
 import webDeveloperImg from "../assets/Web Developer.png";
+import  Codecademy  from "../assets/company/Codecademy.png";
 
 export const navLinks: TNavLink[] = [
   {
@@ -233,5 +233,21 @@ export const aboutMe = {
 };
 
 export { services, technologies, experiences, projects };
-export {web, html, css, javascript, typescript, reactjs, redux, expo, phaserPlanetSmall, phpIcon, wordpressIcon, frontendIcon, unilorin, waltersGarment, nodejs, git, figma, Codecademy};
-// This file contains constants and configurations for the application.
+export { default as web } from "../assets/web.png";
+export { default as html } from "../assets/html.png";
+export { default as css } from "../assets/css.png";
+export { default as javascript } from "../assets/javascript.png";
+export { default as typescript } from "../assets/typescript.png";
+export { default as reactjs } from "../assets/reactjs.png";
+export { default as redux } from "../assets/redux.png";
+export { default as expo } from "../assets/expo.png";
+export { default as phaserPlanetSmall } from "../assets/phaser-planet-small.png";
+export { default as phpIcon } from "../assets/php.png";
+export { default as wordpressIcon } from "../assets/wordpress.png";
+export { default as frontendIcon } from "../assets/frontend.png";
+export { default as unilorin } from "../assets/unilorin.png";
+export { default as waltersGarment } from "../assets/walters garment.png";
+export { default as nodejs } from "../assets/nodejs.png";
+export { default as git } from "../assets/git.png";
+export { default as figma } from "../assets/figma.png";
+export { default as Codecademy } from "../assets/company/Codecademy.png";
