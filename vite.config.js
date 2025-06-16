@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: '/Mern-stack-blog/',
+  base: '/Cyberspace-Blog/',
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1200,

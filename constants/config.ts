@@ -40,7 +40,7 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Isaac Yakubu - Mern Stack Portfolio",
+    title: "Isaac Yakubu - Cyberspace-Blog",
     fullName: "Isaac Yakubu",
     email: "isaacyakubu@outlook.com",
   },
